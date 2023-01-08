@@ -13,7 +13,7 @@ bl_info = {
     "author": "tech-artists.org",
     "description": "PySide6 application loop utility",
     "blender": (3, 4, 0),
-    "version": (2, 4, 1),
+    "version": (0, 2, 1),
     "location": "",
     "warning": "",
     "wiki_url": "",
