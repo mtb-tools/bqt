@@ -13,8 +13,8 @@ with suppress(ModuleNotFoundError):
     import AppKit
     import objc
 
-from PySide2.QtGui import QIcon
-from PySide2.QtCore import QObject
+from PySide6.QtGui import QIcon
+from PySide6.QtCore import QObject
 
 from .blender_application import BlenderApplication
 
@@ -80,3 +80,6 @@ class DarwinBlenderApplication(BlenderApplication):
             self._ns_window.makeKey()
             with bpy.context.temp_override(window=bpy.context.window_manager.windows[0]):
                 bpy.ops.bqt.return_focus("INVOKE_DEFAULT")
+
+
+__all__ = ["DarwinBlenderApplication"]

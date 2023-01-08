@@ -2,8 +2,8 @@
 from bqt_demo import anim_bar
 anim_bar.main()
 """
-from PySide2 import QtWidgets
-from PySide2.QtCore import Qt, QTimer
+from PySide6 import QtWidgets
+from PySide6.QtCore import Qt, QTimer
 import bpy
 
 
@@ -32,8 +32,7 @@ class Window(QtWidgets.QWidget):
 
     def show(self):
         super(Window, self).show()
-        tick = int(1000 / 30)  # tick 1000 / frames per second
-        self.timer.start(tick)
+        self.timer.start(1000 // 30)  # tick 1000 / frames per second
 
     def on_update(self):
         """set slider to current frame from blender"""
